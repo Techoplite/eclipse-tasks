@@ -13,7 +13,6 @@ h1 {
 
 .card {
     min-width: 250px;
-    min-height: 667px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px #E61577;
     border-radius: 20px;
@@ -53,4 +52,67 @@ li {
     list-style-image: url(images/black-tick.png);
     line-height: 19px;
     margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.prev-price {
+    color: #BFBFBF;
+    background-image: url(images/diagonal-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    font-weight: 700;
+}
+
+.current-price {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #ED143D;
+    width: fit-content;
+}
+
+.discount {
+    width: fit-content;
+    color: #ED143D;
+    padding: 3px 6px;
+    background: rgba(237, 20, 61, 0.2);
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.row {
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+}
+
+.stock-bar,
+.wrap {
+    width: 100%
+}
+
+.stock-info {
+    color: #ED143D;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.delivery-info {
+    margin-left: 9px;
+}
+
+.cta-btn {
+    background: linear-gradient(116.7deg, #E61577 9.51%, #992478 95.18%);
+    border-radius: 21px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8.5px 44px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 15px;
 }
