@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    min-width: 250px;
+    min-height: 667px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px #E61577;
+    border-radius: 20px;
+    border: 2px solid #333333;
+    padding: 40px 20px;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* Charcoal */
+    color: #333333;
+    display: flex;
+    max-width: 295px;
+}
+
+.rating {
+    margin-top: 9.54px;
+    display: flex;
+    align-items: center;
+}
+
+.reviews-number {
+    margin-left: 10px;
+}
+
+.item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+li {
+    list-style-image: url(images/black-tick.png);
+    line-height: 19px;
+    margin-bottom: 7px;
+}
