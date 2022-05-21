@@ -24,7 +24,6 @@ function changeButtonStyleAndContent(color, content) {
     addToBasketBtn.style.background = color;
     var price = document.body.querySelector('meta[itemprop="price"]').content;
     addToBasketBtn.style.textTransform = 'none';
-    var labelText = addToBasketBtn.innerText;
     addToBasketBtn.innerText = '€' + price + ' - ' + content;
     // label font-family detected from 'fontspring.com' seems to be one of 'Core Sans' variants, which would need to be downloaded and served or accessed via CDN 
     function setHoverStyle() {
