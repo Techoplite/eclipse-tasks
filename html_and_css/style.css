@@ -5,11 +5,20 @@ body {
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes blink {
+    from {
+        box-shadow: 0px 0px 20px #e61577
+    }
+    to {
+        box-shadow: 0px 0px 10px #e61577;
+    }
 }
 
 .card {
@@ -19,6 +28,12 @@ h1 {
     border: 2px solid #333333;
     padding: 40px 20px;
     width: 100%;
+    max-width: 500px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
 }
 
 .card-title {
@@ -132,7 +147,7 @@ li {
     margin-right: 1rem;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 940px) {
     .card {
         display: grid;
         grid-template-areas: "item-image-container top top top payment" "item-image-container item-features item-features item-features payment";
@@ -162,5 +177,6 @@ li {
     .payment {
         grid-area: payment;
         padding: 1rem;
+        min-width: 280px;
     }
 }
