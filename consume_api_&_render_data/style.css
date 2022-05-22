@@ -21,12 +21,19 @@ body {
     border-radius: 20px 20px 0 0;
 }
 
+.image {
+    height: 411px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .image-infos {
     display: flex;
     justify-content: space-between;
     padding: 11.87px 16px;
     border-radius: 0 0 20px 20px;
     flex-wrap: wrap;
+    margin-top: -3px;
 }
 
 .description,

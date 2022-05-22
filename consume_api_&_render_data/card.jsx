@@ -11,16 +11,7 @@ class Card extends React.Component {
     return (
       <div className="container">
         <div className="description">{this.props.description}</div>
-        <div
-          style={{
-            height: 411,
-            backgroundImage: `url(${this.props.img})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            position: "relative",
-          }}
-        ></div>
+        <img src={this.props.img} alt="" className="image"/>
         <div className="image-infos">
           <div className="info-container">
             <div className="preposition">by</div>
