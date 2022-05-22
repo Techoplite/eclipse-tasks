@@ -1,26 +1,37 @@
 body {
-    padding: 2rem;
+    padding: 0.5rem;
+    background: #dedede;
 }
 
 .container {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 386px;
+    margin-bottom: 38.37px;
     border-radius: 20px;
-    padding: 11.87px 16px;
 }
 
 .description {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #000000;
+    padding: 11.87px 16px;
+    border-radius: 20px 20px 0 0;
 }
 
 .image-infos {
     display: flex;
     justify-content: space-between;
     height: 60px;
+    padding: 11.87px 16px;
+    border-radius: 0 0 20px 20px;
+}
+
+.description,
+.image-infos {
+    background: white;
 }
 
 .info-container {
@@ -28,7 +39,7 @@ body {
 }
 
 .preposition {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -38,17 +49,17 @@ body {
 }
 
 .auth {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-decoration-line: underline;
-    color: #E61577;
+    color: #e61577;
 }
 
 .date {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
