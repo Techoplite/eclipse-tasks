@@ -16,3 +16,49 @@ body {
     line-height: 33px;
     color: #000000;
 }
+
+.image-infos {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.info-container {
+    display: flex;
+}
+
+.preposition {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 15.04px;
+    width: 30px;
+}
+
+.auth {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #E61577;
+}
+
+.date {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-right: 2rem;
+}
+
+.auth,
+.date {
+    display: flex;
+    align-items: center;
+}

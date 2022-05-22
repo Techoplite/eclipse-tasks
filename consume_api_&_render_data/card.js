@@ -13,6 +13,16 @@ class Card extends React.Component {
         <div className="description">
           {this.props.description}
         </div>
+        <div className="image-infos">
+          <div className="info-container">
+            <div className="preposition">by</div>
+            <div className="auth">{this.props.auth}</div>
+          </div>
+          <div className="info-container">
+            <div className="preposition">on</div>
+            <div className="date">{this.props.date}</div>
+          </div>
+        </div>
       </div>
     );
   }
