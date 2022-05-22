@@ -133,6 +133,7 @@ body {
     }
     .image-infos {
         bottom: 10px;
+        justify-content: start;
     }
     .description {
         bottom: 27px;
@@ -156,5 +157,8 @@ body {
         width: 100%;
         border-radius: 0px 0px 20px 20px;
         background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(230, 230, 230, 0.572917) 23.96%, #FFFFFF 100%);
+    }
+    .auth {
+        margin-right: 29px;
     }
 }
