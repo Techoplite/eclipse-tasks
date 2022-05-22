@@ -3,7 +3,6 @@ body {
     background: #dedede;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
     flex-direction: column;
 }
 
@@ -113,11 +112,16 @@ body {
 }
 
 @media (min-width: 700px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .container {
         position: relative;
         box-shadow: none;
         border-radius: none;
         width: 657px;
+        margin: 30px 24px
     }
     .description,
     .image-infos {
