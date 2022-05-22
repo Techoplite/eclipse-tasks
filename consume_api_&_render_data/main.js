@@ -23,6 +23,7 @@ const createCard = (imageData) => {
     }
     cardEl.setAttribute('description', getDescriptionOrId())
     cardEl.setAttribute('img', imageData.urls.full)
+    cardEl.setAttribute('user-link', imageData.user.links.html)
     console.log('cardEl', cardEl)
     document.body.appendChild(cardEl);
 }
