@@ -11,19 +11,24 @@ class Card extends React.Component {
     this.setState({ imageStatus: "loaded" });
   }
   getImgClass() {
-    return this.state.imageStatus === 'loaded' ? 'image': 'hide'
+    return this.state.imageStatus === "loaded" ? "image" : "hide";
   }
   render() {
     return (
       <div className="container">
         <div className="description">{this.props.description}</div>
-        <img
-          src={this.props.img}
-          alt=""
-          className={this.state.imageStatus === 'loaded' ? 'image': 'hide'}
-          onLoad={this.handleImageLoaded.bind(this)}
-        />
-        <div className={this.state.imageStatus === 'loaded' ? 'hide': 'skeleton'}></div>
+        <div className="image-container">
+          <img
+            src={this.props.img}
+            alt=""
+            className={this.state.imageStatus === "loaded" ? "image" : "hide"}
+            onLoad={this.handleImageLoaded.bind(this)}
+          />
+          <div className="gradient-background"></div>
+        </div>
+        <div
+          className={this.state.imageStatus === "loaded" ? "hide" : "skeleton"}
+        ></div>
         <div className="image-infos">
           <div className="info-container">
             <div className="preposition">by</div>
