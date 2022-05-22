@@ -14,7 +14,7 @@ const createCard = (imageData) => {
     const cardEl = document.createElement('div');
     cardEl.className = 'card';
     cardEl.setAttribute('auth', imageData.user.name)
-    cardEl.setAttribute('date', imageData.created_at)
+    cardEl.setAttribute('date', dayjs(imageData.created_at).format('DD/MM/YYYY'))
     const getDescriptionOrId = () => {
         if (imageData.description) {
             return imageData.description;
