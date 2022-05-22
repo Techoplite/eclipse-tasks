@@ -5,13 +5,25 @@ const e = React.createElement;
 class Card extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { imageStatus: "loading" };
   }
-
+  handleImageLoaded() {
+    this.setState({ imageStatus: "loaded" });
+  }
+  getImgClass() {
+    return this.state.imageStatus === 'loaded' ? 'image': 'hide'
+  }
   render() {
     return (
       <div className="container">
         <div className="description">{this.props.description}</div>
-        <img src={this.props.img} alt="" className="image"/>
+        <img
+          src={this.props.img}
+          alt=""
+          className={this.state.imageStatus === 'loaded' ? 'image': 'hide'}
+          onLoad={this.handleImageLoaded.bind(this)}
+        />
+        <div className={this.state.imageStatus === 'loaded' ? 'hide': 'skeleton'}></div>
         <div className="image-infos">
           <div className="info-container">
             <div className="preposition">by</div>

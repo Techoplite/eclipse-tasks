@@ -1,6 +1,10 @@
 body {
     padding: 0.5rem;
     background: #dedede;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .container {
@@ -8,6 +12,8 @@ body {
     min-width: 250px;
     margin-bottom: 38.37px;
     border-radius: 20px;
+    max-width: 400px;
+    margin: 38.37px auto;
 }
 
 .description {
@@ -19,12 +25,37 @@ body {
     color: #000000;
     padding: 11.87px 16px;
     border-radius: 20px 20px 0 0;
+    padding-bottom: 2rem;
 }
 
 .image {
     height: 411px;
     width: 100%;
     object-fit: cover;
+}
+
+.hide {
+    display: none
+}
+
+@keyframes wave-squares {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.skeleton {
+    height: 411px;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-linear-gradient( linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+    background: linear-gradient( to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
 }
 
 .image-infos {
@@ -34,6 +65,7 @@ body {
     border-radius: 0 0 20px 20px;
     flex-wrap: wrap;
     margin-top: -3px;
+    padding-bottom: 1rem;
 }
 
 .description,
@@ -72,7 +104,6 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: #000000;
-    margin-right: 2rem;
     display: flex;
 }
 
