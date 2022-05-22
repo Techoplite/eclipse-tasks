@@ -10,7 +10,6 @@ const getPhotos = async() => {
 }
 
 const createCard = (imageData) => {
-    console.log('imageData', imageData)
     const cardEl = document.createElement('div');
     cardEl.className = 'card';
     cardEl.setAttribute('auth', imageData.user.name)
@@ -24,7 +23,6 @@ const createCard = (imageData) => {
     cardEl.setAttribute('description', getDescriptionOrId())
     cardEl.setAttribute('img', imageData.urls.full)
     cardEl.setAttribute('user-link', imageData.user.links.html)
-    console.log('cardEl', cardEl)
     document.body.appendChild(cardEl);
 }
 const generateCards = async() => {
