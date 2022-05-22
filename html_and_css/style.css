@@ -144,12 +144,6 @@ li {
     margin-right: 1rem;
 }
 
-@media (max-width: 350px) {
-    .cta-btn {
-        font-size: 12px;
-    }
-}
-
 @media (min-width: 940px) {
     .card {
         display: grid;
