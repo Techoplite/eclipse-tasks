@@ -158,6 +158,11 @@ body {
         border-radius: 0px 0px 20px 20px;
         background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(230, 230, 230, 0.572917) 23.96%, #FFFFFF 100%);
     }
+    .skeleton {
+        width: 657px;
+        height: 645px;
+        border-radius: 20px;
+    }
     .auth {
         margin-right: 29px;
     }
